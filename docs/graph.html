@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Mastery Graph</title>
+    <link rel="icon" type="image/x-icon" href="images/aronlogo.png">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="Graph">
+
+    <nav>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li id="about-link">Back</li>
+        </ul>
+    </nav>
+
+    <h2>Skill Mastery Bar Graph</h2>
+    <div class="chart-container">
+        <canvas id="skillsChart"></canvas>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+    // Redirect links
+    document.getElementById("about-link").addEventListener("click", function () {
+        window.location.href = "base.html"; // Redirect to About page
+    });
+    });
+
+    </script>
+
+</body>
+</html>
